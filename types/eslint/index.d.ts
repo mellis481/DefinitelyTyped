@@ -839,6 +839,9 @@ export namespace ESLint {
         fix?: boolean | ((message: Linter.LintMessage) => boolean) | undefined;
         fixTypes?: Array<Rule.RuleMetaData["type"]> | undefined;
 
+        // Handling warnings:
+        quiet?: boolean;
+
         // Cache-related
         cache?: boolean | undefined;
         cacheLocation?: string | undefined;
